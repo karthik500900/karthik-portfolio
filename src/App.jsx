@@ -1,7 +1,7 @@
-const [darkMode, setDarkMode] = useState(true);
 import { useState } from "react";
+import "./index.css";
 import "./App.css";
-
+const [darkMode, setDarkMode] = useState(true);
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
@@ -117,20 +117,13 @@ Currently a <b>Full Stack Developer Intern at CodeXOHO</b>, actively building pr
   <h3>Experience</h3>
 
   <div className="card">
-    <h4>Full Stack Developer Intern</h4>
-    <p className="company">
-      CodeXOHO · Internship
-    </p>
-    <p className="duration">
-      Present
-    </p>
-
-    <ul className="experience-list">
-      <li>Built and maintained full-stack web applications using React and Node.js</li>
-      <li>Worked on backend APIs, database integration, and authentication</li>
-      <li>Collaborated with team members to deliver production-ready features</li>
-      <li>Applied AI concepts and modern development practices in real projects</li>
-      <li>Gained hands-on experience with real-world startup workflows</li>
+    <h4>Full Stack Developer Intern — CodeXOHO</h4>
+    <p className="timeline">2024 – Present</p>
+    <ul>
+      <li>Built responsive web applications using React & Node.js</li>
+      <li>Worked on backend APIs and database integration</li>
+      <li>Deployed live projects and collaborated with team members</li>
+      <li>Gained real-world startup development experience</li>
     </ul>
   </div>
 </section>
