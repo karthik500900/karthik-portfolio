@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #38bdf8;
+}
+
+.hero h2 {
+  font-size: 1.3rem;
+  margin: 10px 0;
+  color: #cbd5f5;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 15px auto 25px;
+  line-height: 1.6;
+  color: #94a3b8;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #22c55e;
+  color: #0f172a;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background: #16a34a;
+}
+.section {
+  margin-bottom: 60px;
+}
+
+.section h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-left: 5px solid #38bdf8;
+  padding-left: 12px;
+}
+
+.skills {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.skills li {
+  background: #020617;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #020617;
+  padding: 20px;
+  border-radius: 15px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card h4 {
+  margin-bottom: 10px;
+  color: #38bdf8;
+}
+
+#contact p {
+  margin: 10px 0;
+}
+.project-links {
+  margin-top: 12px;
+  display: flex;
+  gap: 12px;
+}
+
+.project-links a {
+  padding: 8px 14px;
+  border-radius: 6px;
+  background: #22c55e;
+  color: #0f172a;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.project-links a:hover {
+  background: #16a34a;
+  transform: translateY(-2px);
+}
+/* Smooth fade animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation */
+.hero,
+.section,
+.card {
+  animation: fadeUp 0.8s ease-in-out;
+}
+
+/* Card hover effect */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .hero p {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .section {
+    padding: 30px 15px;
+  }
+
+  .project-links {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+}
