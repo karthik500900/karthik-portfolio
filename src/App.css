@@ -1,7 +1,18 @@
+/* Global reset and smooth scrolling */
+body {
+  background: red !important;
+}
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -539,4 +550,62 @@ html {
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
+}
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero h2 {
+    font-size: 16px;
+  }
+
+  .contact-links {
+    flex-direction: column;
+  }
+}
+/* THEME MODES */
+.app.dark {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+.app.light {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+.app.light .card {
+  background: #ffffff;
+  color: #0f172a;
+}
+
+.app.light .navbar {
+  background: #ffffff;
+}
+
+/* Toggle button */
+.theme-toggle {
+  background: none;
+  border: 1px solid #7cff00;
+  color: #7cff00;
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.section {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

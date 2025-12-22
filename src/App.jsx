@@ -1,10 +1,11 @@
+const [darkMode, setDarkMode] = useState(true);
 import { useState } from "react";
 import "./App.css";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="app">
+    <div className={`app ${darkMode ? "dark" : "light"}`}>
       <nav className="navbar">
   <h2 className="logo">Karthik</h2>
   <div className="badges">
@@ -22,6 +23,12 @@ function App() {
 </button>
   </div>
    <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
+    <button
+  className="theme-toggle"
+  onClick={() => setDarkMode(!darkMode)}
+>
+  {darkMode ? "🌙 Dark" : "☀️ Light"}
+</button>
     <li><a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a></li>
     <li><a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a></li>
     <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
@@ -59,9 +66,13 @@ function App() {
           <p className="status">🟢 Live & Running</p>
 
           <p>
-            AI-powered retinal disease detection system using CNNs.
-            Supports real-time image upload and prediction via a live web interface.
-            Designed for medical screening assistance and AI-driven diagnosis support.
+            <p>
+I build <b>scalable web applications</b> and <b>AI-powered products</b> that solve real-world problems.
+<br />
+Experienced in <b>React, Node.js, Python, and Deep Learning</b>.
+<br />
+Currently a <b>Full Stack Developer Intern at CodeXOHO</b>, actively building production-ready systems.
+</p>
           </p>
 
           <div className="project-links">
