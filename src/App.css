@@ -310,3 +310,174 @@ html {
   font-size: 13px;
   font-weight: 600;
 }
+.app {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  position: sticky;
+  top: 0;
+  background: #0f172a;
+  z-index: 100;
+}
+
+.logo {
+  color: #22c55e;
+  font-weight: bold;
+}
+
+/* LINKS */
+.nav-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #e5e7eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #22c55e;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #020617;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 0;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+/* ================= MOBILE FIX ================= */
+@media (max-width: 768px) {
+
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  .app {
+    width: 100%;
+    padding: 16px;
+  }
+
+  /* NAVBAR */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li a {
+    font-size: 16px;
+  }
+
+  /* HERO SECTION */
+  .hero {
+    text-align: center;
+    padding: 24px 12px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  .hero h2 {
+    font-size: 16px;
+  }
+
+  .hero p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* BUTTONS */
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* PROJECT CARDS */
+  .card {
+    padding: 16px;
+  }
+
+  /* SKILLS LIST */
+  .skills-list li {
+    font-size: 14px;
+  }
+}
+.menu-btn {
+  background: none;
+  border: none;
+  color: #7CFF00;
+  font-size: 26px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Show menu button only on mobile */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+}
+* {
+  box-sizing: border-box;
+}

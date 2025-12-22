@@ -1,6 +1,8 @@
+import { useState } from "react";
 import "./App.css";
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="app">
       <nav className="navbar">
@@ -11,10 +13,18 @@ function App() {
   <span>💼 Startup Ready</span>
 </div>
 
-  <ul className="nav-links">
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#contact">Contact</a></li>
+ <div className="badges">
+  <button
+  className="menu-btn"
+  onClick={() => setMenuOpen(!menuOpen)}
+>
+  ☰
+</button>
+  </div>
+   <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
+    <li><a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a></li>
+    <li><a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a></li>
+    <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
   </ul>
 </nav>
       <section className="section" id="projects">
@@ -45,50 +55,53 @@ function App() {
         <h3>Projects</h3>
 
         <div className="card">
-  <h4>AI-Powered Retinal Disease Detection</h4>
-  <p className="status">🟢 Live & Running</p>
+          <h4>AI-Powered Retinal Disease Detection</h4>
+          <p className="status">🟢 Live & Running</p>
 
-  <p>
-  AI-powered retinal disease detection system using CNNs.
-  Supports real-time image upload and prediction via a live web interface.
-  Designed for medical screening assistance and AI-driven diagnosis support.
-  </p>
-  <section className="section" id="about">
-  <h3>About Me</h3>
-  <p>
-    I’m <b>Karthik Reddy Narapureddy</b>, a passionate Full Stack Developer and AI enthusiast
-    focused on building scalable, real-world solutions.
-    I enjoy turning complex problems into simple, elegant products using modern technologies.
-  </p>
+          <p>
+            AI-powered retinal disease detection system using CNNs.
+            Supports real-time image upload and prediction via a live web interface.
+            Designed for medical screening assistance and AI-driven diagnosis support.
+          </p>
 
-  <p>
-    My journey includes hands-on experience with <b>web development, AI/ML models,
-    and deploying live applications</b>.
-    I actively work on startup-oriented projects and continuously improve my skills
-    to stay industry-ready.
-  </p>
-</section>
+          <div className="project-links">
+            <a
+              href="https://github.com/karthik500900/AI-BASED-RETINAL-DISEASE-DETECTION-USING-DEEP-LEARNING"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-outline"
+            >
+              GitHub
+            </a>
 
-  <div className="project-links">
-    <a
-      href="https://github.com/karthik500900/AI-BASED-RETINAL-DISEASE-DETECTION-USING-DEEP-LEARNING"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="btn btn-outline"
-    >
-      GitHub
-    </a>
+            <a
+              href="https://huggingface.co/spaces/narapureddykarthi/ai-retinal-disease-detection"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn live-btn"
+            >
+              Live Demo
+            </a>
+          </div>
+        </div>
+      </section>
 
-    <a
-      href="https://huggingface.co/spaces/narapureddykarthi/ai-retinal-disease-detection"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="btn live-btn"
-    >
-      Live Demo
-    </a>
-  </div>
-</div>
+      <section className="section" id="about">
+        <h3>About Me</h3>
+        <p>
+          I'm <b>Karthik Reddy Narapureddy</b>, a passionate Full Stack Developer and AI enthusiast
+          focused on building scalable, real-world solutions.
+          I enjoy turning complex problems into simple, elegant products using modern technologies.
+        </p>
+
+        <p>
+          My journey includes hands-on experience with <b>web development, AI/ML models,
+          and deploying live applications</b>.
+          I actively work on startup-oriented projects and continuously improve my skills
+          to stay industry-ready.
+        </p>
+      </section>
+
 <section className="section" id="experience">
   <h3>Experience</h3>
 
@@ -110,10 +123,8 @@ function App() {
     </ul>
   </div>
 </section>
-<section className="section" id="contact">
 
-
-  <section className="section" id="skills">
+<section className="section" id="skills">
   <h3>Skills</h3>
 
   <ul className="skills-list">
@@ -125,6 +136,7 @@ function App() {
     <li><b>Deployment:</b> Hugging Face Spaces, Static Hosting</li>
   </ul>
 </section>
+
 <section className="section" id="education">
   <h3>Education</h3>
 
@@ -132,41 +144,18 @@ function App() {
     <h4>Bachelor of Engineering (Computer Science)</h4>
     <p>
       AMC Engineering College<br />
-      2021 – 2025
+      2022 – 2026
     </p>
   </div>
 </section>
-    
 
-</section>
-
-
-
-        <div className="card">
-          <h4>Stock Portfolio Management</h4>
-          <p className="status">🟢 Live & Running</p>
-          <p>
-            Java-based backend system for managing stock investments.
-          </p>
-        </div>
-
-        <div className="card">
-          <h4>Personal Portfolio Website</h4>
-          <p>
-            Modern portfolio built using React and Vite.
-          </p>
-        </div>
-      </section>
-
-      <section className="section" id="contact">
+<section className="section" id="contact">
   <h3>Contact</h3>
-  <section className="section">
   <h3>what i do</h3>
   <p>✔ Build responsive and modern web applications</p>
   <p>✔ Develop AI-powered solutions using deep learning</p>
   <p>✔ Deploy live applications and demos</p>
   <p>✔ Work on startup-oriented, problem-solving projects</p>
-</section>
   <p>Email: narapureddykarthi@gmail.com</p>
   <p>LinkedIn: 
     <a href="https://www.linkedin.com/in/karthik-kumar-reddy-narapureddy-95978325a"
