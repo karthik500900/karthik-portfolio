@@ -149,17 +149,46 @@ function App() {
   </div>
 </section>
 
-<section className="section" id="contact">
-  <h3>Contact</h3>
-  <p>phone: +91 9381715009</p>
-  <p>Email: narapureddykarthi@gmail.com</p>
-  <p>LinkedIn: 
-    <a href="https://www.linkedin.com/in/karthik-kumar-reddy-narapureddy-95978325a"
-       target="_blank"
-       rel="noopener noreferrer">
-       View Profile
-    </a>
+<section className="section contact" id="contact">
+  <h3>contact Me</h3>
+  <form
+  className="contact-form"
+  action="https://formspree.io/f/meejrlvp"
+  method="POST"
+>
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
+
+  <p className="contact-text">
+    I’m open to internships, full-time roles, and startup collaborations.
   </p>
+
+  <div className="contact-links">
+    <a href="mailto:narapureddykarthi@gmail.com" className="contact-btn">
+      📧 Email Me
+    </a>
+
+    <a
+      href="https://www.linkedin.com/in/karthik-kumar-reddy-narapureddy-95978325a/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="contact-btn"
+    >
+      💼 LinkedIn
+    </a>
+
+    <a
+      href="https://wa.me/919381715009"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="contact-btn whatsapp"
+    >
+      💬 WhatsApp
+    </a>
+  </div>
 </section>
 <footer className="footer">
   <p>© 2025 Karthik Reddy Narapureddy. All rights reserved.</p>
