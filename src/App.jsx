@@ -151,11 +151,7 @@ function App() {
 
 <section className="section" id="contact">
   <h3>Contact</h3>
-  <h3>what i do</h3>
-  <p>✔ Build responsive and modern web applications</p>
-  <p>✔ Develop AI-powered solutions using deep learning</p>
-  <p>✔ Deploy live applications and demos</p>
-  <p>✔ Work on startup-oriented, problem-solving projects</p>
+  <p>phone: +91 9381715009</p>
   <p>Email: narapureddykarthi@gmail.com</p>
   <p>LinkedIn: 
     <a href="https://www.linkedin.com/in/karthik-kumar-reddy-narapureddy-95978325a"
