@@ -22,7 +22,7 @@ function App() {
 >
   Download Resume
 </a>
-</div>
+  </div>
       </section>
 
       <section className="section">
@@ -42,16 +42,9 @@ function App() {
     >
       GitHub
     </a>
-
-    <a 
-      href="https://karthik-reddy-portfolio.netlify.app/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Live Demo
-    </a>
   </div>
-</div>
+
+  </div>
 
         <div className="card">
           <h4>Stock Portfolio Management</h4>
