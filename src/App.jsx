@@ -31,34 +31,48 @@ export default function App() {
           Building full-stack applications, APIs, and startup-ready platforms.
         </p>
       </section>
+      <section>
+        <h2>Projects</h2>
+
+        <div className="project">
+          <h3>AI Eye Disease Detection</h3>
+          <p>Deep Learning model that detects eye diseases from retinal images using CNNs.</p>
+          <a href="https://eyemedicore.onrender.com/" target="_blank">Live Demo</a> |
+          <a href="https://github.com/sanjays50/Eye-Disease-Classigication-and-Detection" target="_blank">GitHub</a>
+        </div>
+
+        <div className="project">
+          <h3>Plant Disease Detection</h3>
+          <p>AI system that detects plant diseases from leaf images.</p>
+          <a href="https://github.com/karthik500900/plant-disease-detection" target="_blank">GitHub</a>
+        </div>
+
+        <div className="project">
+          <h3>Personal Portfolio</h3>
+          <p>React + Vite powered personal portfolio website.</p>
+          <a href="https://karthik-portfolio-kohl.vercel.app" target="_blank">Live</a>
+        </div>
+      </section>
 
       <section id="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:narapureddykarthi@gmail.com">narapureddykarthi@gmail.com</a></p>
+        <p>Email: narapureddykarthi@gmail.com</p>
+
+        <p>
+          GitHub:{" "}
+          <a href="https://github.com/karthik500900" target="_blank">
+            karthik500900
+          </a>
+        </p>
+
         <p>
           LinkedIn:{" "}
-          <a
-            href="https://www.linkedin.com/in/karthik-kumar-reddy-narapureddy-95978325a/"
-            target="_blank"
-          >
+          <a href="https://linkedin.com/in/" target="_blank">
             View Profile
           </a>
         </p>
       </section>
+
     </div>
   );
 }
-<section>
-  <h2>Contact</h2>
-  <p>Email: narapureddykarthi@gmail.com</p>
-  <p>LinkedIn: 
-    <a href="https://linkedin.com/in/your-link" target="_blank">
-      View Profile
-    </a>
-  </p>
-  <p>GitHub:
-    <a href="https://github.com/karthik500900" target="_blank">
-      github.com/karthik500900
-    </a>
-  </p>
-</section>
