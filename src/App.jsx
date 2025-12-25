@@ -76,3 +76,10 @@ export default function App() {
     </div>
   );
 }
+<a
+  href="https://wa.me/919381715009"
+  className="whatsapp"
+  target="_blank"
+>
+  💬
+</a>
