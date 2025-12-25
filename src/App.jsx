@@ -48,3 +48,17 @@ export default function App() {
     </div>
   );
 }
+<section>
+  <h2>Contact</h2>
+  <p>Email: narapureddykarthi@gmail.com</p>
+  <p>LinkedIn: 
+    <a href="https://linkedin.com/in/your-link" target="_blank">
+      View Profile
+    </a>
+  </p>
+  <p>GitHub:
+    <a href="https://github.com/karthik500900" target="_blank">
+      github.com/karthik500900
+    </a>
+  </p>
+</section>
