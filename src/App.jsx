@@ -50,7 +50,7 @@ export default function App() {
         <div className="project">
           <h3>Personal Portfolio</h3>
           <p>React + Vite powered personal portfolio website.</p>
-          <a href="https://karthik-portfolio-kohl.vercel.app" target="_blank">Live</a>
+          <a href="https://karthik-portfolio-lime.vercel.app" target="_blank">Live</a>
         </div>
       </section>
 
