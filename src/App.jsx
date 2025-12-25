@@ -1,204 +1,50 @@
-import { useState } from "react";
-import "./index.css";
 import "./App.css";
-const [darkMode, setDarkMode] = useState(true);
-function App() {
-  const [menuOpen, setMenuOpen] = useState(false);
+
+export default function App() {
   return (
-    <div className={`app ${darkMode ? "dark" : "light"}`}>
-      <nav className="navbar">
-  <h2 className="logo">Karthik</h2>
-  <div className="badges">
-  <span>🚀 Open to Internships</span>
-  <span>🧠 AI Projects Live</span>
-  <span>💼 Startup Ready</span>
-</div>
+    <div className="container">
+      <h1 className="name">Karthik Reddy</h1>
+      <p className="tagline">Full Stack Developer • AI Engineer • Startup Builder</p>
 
- <div className="badges">
-  <button
-  className="menu-btn"
-  onClick={() => setMenuOpen(!menuOpen)}
->
-  ☰
-</button>
-  </div>
-   <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
-    <button
-  className="theme-toggle"
-  onClick={() => setDarkMode(!darkMode)}
->
-  {darkMode ? "🌙 Dark" : "☀️ Light"}
-</button>
-    <li><a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a></li>
-    <li><a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a></li>
-    <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
-  </ul>
-</nav>
-      <section className="section" id="projects">
-        <h1>Karthik Reddy Narapureddy</h1>
-    <h2>Full Stack Developer | Web & App | AI Enthusiast</h2>
+      <section>
+        <h2>About Me</h2>
         <p>
-
-  I build <b>scalable web applications</b> and <b>AI-powered products</b>
-  that solve real-world problems.
-  <br />
-  Experienced in <b>React, Node.js, Python, Deep Learning</b>.
-  <br />
-  Actively building <b>live AI projects</b> and preparing for
-  startup & tech roles.
-</p>
-        <div className="projects-buttons">
-  <a href="#contact" className="btn">Contact Me</a>
-
-  <a
-  href="/karthik_Reddy_Resume.pdf"
-  download className="btn">
-  Download Resume
-</a>
-  </div>
-      </section>
-
-      <section className="section" id="hero-projects">
-        <h3>Projects</h3>
-
-        <div className="card">
-          <h4>AI-Powered Retinal Disease Detection</h4>
-          <p className="status">🟢 Live & Running</p>
-
-          <p>
-            <p>
-I build <b>scalable web applications</b> and <b>AI-powered products</b> that solve real-world problems.
-<br />
-Experienced in <b>React, Node.js, Python, and Deep Learning</b>.
-<br />
-Currently a <b>Full Stack Developer Intern at CodeXOHO</b>, actively building production-ready systems.
-</p>
-          </p>
-
-          <div className="project-links">
-            <a
-              href="https://github.com/karthik500900/AI-BASED-RETINAL-DISEASE-DETECTION-USING-DEEP-LEARNING"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-outline"
-            >
-              GitHub
-            </a>
-
-            <a
-              href="https://huggingface.co/spaces/narapureddykarthi/ai-retinal-disease-detection"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn live-btn"
-            >
-              Live Demo
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section className="section" id="about">
-        <h3>About Me</h3>
-        <p>
-          I'm <b>Karthik Reddy Narapureddy</b>, a passionate Full Stack Developer and AI enthusiast
-          focused on building scalable, real-world solutions.
-          I enjoy turning complex problems into simple, elegant products using modern technologies.
-        </p>
-
-        <p>
-          My journey includes hands-on experience with <b>web development, AI/ML models,
-          and deploying live applications</b>.
-          I actively work on startup-oriented projects and continuously improve my skills
-          to stay industry-ready.
+          I am a passionate Full Stack Developer and AI Engineer focused on
+          building scalable web applications, AI-powered products, and startup-ready systems.
         </p>
       </section>
 
-<section className="section" id="experience">
-  <h3>Experience</h3>
+      <section>
+        <h2>Skills</h2>
+        <ul>
+          <li>Frontend — React, HTML, CSS, JavaScript</li>
+          <li>Backend — Node.js, Express, Flask</li>
+          <li>AI / ML — Deep Learning, CNNs, Image Classification</li>
+          <li>Tools — Git, GitHub, Vercel, Render</li>
+        </ul>
+      </section>
 
-  <div className="card">
-    <h4>Full Stack Developer Intern — CodeXOHO</h4>
-    <p className="timeline">2024 – Present</p>
-    <ul>
-      <li>Built responsive web applications using React & Node.js</li>
-      <li>Worked on backend APIs and database integration</li>
-      <li>Deployed live projects and collaborated with team members</li>
-      <li>Gained real-world startup development experience</li>
-    </ul>
-  </div>
-</section>
+      <section>
+        <h2>Experience</h2>
+        <p>
+          <b>Full Stack Developer Intern — CodeXOHO</b><br />
+          Building full-stack applications, APIs, and startup-ready platforms.
+        </p>
+      </section>
 
-<section className="section" id="skills">
-  <h3>Skills</h3>
-
-  <ul className="skills-list">
-    <li><b>Frontend:</b> React, HTML, CSS, JavaScript</li>
-    <li><b>Backend:</b> Node.js, Express, Flask</li>
-    <li><b>AI / ML:</b> CNNs, Deep Learning, Image Classification</li>
-    <li><b>Languages:</b> Python, Java, JavaScript</li>
-    <li><b>Tools:</b> Git, GitHub, Hugging Face, Render</li>
-    <li><b>Deployment:</b> Hugging Face Spaces, Static Hosting</li>
-  </ul>
-</section>
-
-<section className="section" id="education">
-  <h3>Education</h3>
-
-  <div className="card">
-    <h4>Bachelor of Engineering (Computer Science)</h4>
-    <p>
-      AMC Engineering College<br />
-      2022 – 2026
-    </p>
-  </div>
-</section>
-
-<section className="section contact" id="contact">
-  <h3>contact Me</h3>
-  <form
-  className="contact-form"
-  action="https://formspree.io/f/meejrlvp"
-  method="POST"
->
-  <input type="text" name="name" placeholder="Your Name" required />
-  <input type="email" name="email" placeholder="Your Email" required />
-  <textarea name="message" placeholder="Your Message" required></textarea>
-  <button type="submit">Send Message</button>
-</form>
-
-  <p className="contact-text">
-    I’m open to internships, full-time roles, and startup collaborations.
-  </p>
-
-  <div className="contact-links">
-    <a href="mailto:narapureddykarthi@gmail.com" className="contact-btn">
-      📧 Email Me
-    </a>
-
-    <a
-      href="https://www.linkedin.com/in/karthik-kumar-reddy-narapureddy-95978325a/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="contact-btn"
-    >
-      💼 LinkedIn
-    </a>
-
-    <a
-      href="https://wa.me/919381715009"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="contact-btn whatsapp"
-    >
-      💬 WhatsApp
-    </a>
-  </div>
-</section>
-<footer className="footer">
-  <p>© 2025 Karthik Reddy Narapureddy. All rights reserved.</p>
-</footer>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:narapureddykarthi@gmail.com">narapureddykarthi@gmail.com</a></p>
+        <p>
+          LinkedIn:{" "}
+          <a
+            href="https://www.linkedin.com/in/karthik-kumar-reddy-narapureddy-95978325a/"
+            target="_blank"
+          >
+            View Profile
+          </a>
+        </p>
+      </section>
     </div>
   );
 }
-
-export default App;
